@@ -2,18 +2,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <!--Конфигурация для testNG фреймворка-->
-<suite name="Cross Browser  Suite">
-    <test name="Login Tests Chrome">
+<suite name="Cross Browser Suite">
+
+    <test name="HomePage Title Test Chrome">
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="SiteTest.Pages.HomePageTest" />
+            <class name="SiteTests.HomePageTitleTest" />
         </classes>
     </test>
 
-    <test name="Login Tests Firefox">
+    <!--test name="HomePage Title Test Firefox">
         <parameter name="browser" value="firefox" />
         <classes>
-            <class name="SiteTest.Pages.HomePageTest"/>
+            <class name="SiteTests.HomePageTitleTest"/>
         </classes>
     </test>
+
+    <test name="HomePage Title Test IE">
+        <parameter name="browser" value="ie" />
+        <classes>
+            <class name="SiteTests.HomePageTitleTest" />
+        </classes>
+    </test-->
+
 </suite>

@@ -1,4 +1,4 @@
-package SiteTest.Pages;
+package SiteTests;
 
 import org.testng.annotations.Test;
 

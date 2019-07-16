@@ -1,10 +1,10 @@
-package SiteTest.Pages;
+package SiteTests;
 
 import com.academy.framework.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class HomePageTest extends BaseTest {
+public class HomePageTitleTest extends BaseTest {
     @Test
     public void homePageTitleTest() {
         driver.get( "https://www.adonis.no/" );
