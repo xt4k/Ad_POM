@@ -1,6 +1,6 @@
 package SiteTests;
 
-import com.academy.framework.BaseTest;
+import Model.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

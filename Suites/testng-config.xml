@@ -11,7 +11,7 @@
         </classes>
     </test>
 
-    <!--test name="HomePage Title Test Firefox">
+    <test name="HomePage Title Test Firefox">
         <parameter name="browser" value="firefox" />
         <classes>
             <class name="SiteTests.HomePageTitleTest"/>
@@ -23,6 +23,6 @@
         <classes>
             <class name="SiteTests.HomePageTitleTest" />
         </classes>
-    </test-->
+    </test>
 
 </suite>

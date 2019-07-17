@@ -1,10 +1,15 @@
 package PageObject;
 
+import Model.BasePage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class TopMenuSector {
+import java.util.List;
+
+public class TopMenuSectorPO extends BasePage {
     @FindBy(how = How.XPATH, using = "id(\"header\")//img")
     private WebElement imgLinkTopHomePage;
 
@@ -35,4 +40,16 @@ public class TopMenuSector {
     private WebElement topMenuItemLast;
 
 
+    public TopMenuSectorPO(WebDriver driver) {
+        super( driver );
+    }
+
+    public void checkEveryTopMenuItemLinkText() {
+        List<WebElement> links = driver.findElements( By.tagName( "a" ) );
+        for (WebElement we : links) {
+            //if("Specific link text".equals(we.getText())) {
+            System.out.println( "we.text" + we.getText() );
+            //}
+        }
+    }
 }
