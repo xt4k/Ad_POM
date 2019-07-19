@@ -1,5 +1,6 @@
 package SiteTests;
 
+import CompositePage.HomePage;
 import Model.BaseTest;
 import PageObject.TopMenuSectorPO;
 import org.testng.Assert;
@@ -11,9 +12,9 @@ public class TopMenuTest extends BaseTest {
     public void checkTopMenuItemLinks() {
 
         //1) open Homepage
-        driver.get( "https://www.adonis.no/" );
+        HomePage home = HomePage();
         // 2) check every top menu item link - is it contains text according to data in external storage (where described top menu)
-        TopMenuSectorPO topMenu = new TopMenuSectorPO( driver );
+        TopMenuSectorPO topMenu = home.clickFirstTopMenuItem;
         topMenu.checkEveryTopMenuItemLinkText();
 
         // 3) click on each top menu item and check title on opened page - it should be shown as expected (for example - external storage)
